@@ -1,0 +1,129 @@
+/* Universal Selector */
+* {
+    margin: 0; /* Resseting outter spacing */
+    padding: 0; /* Ressetting inner spacing */
+}
+
+.body {
+    background: #711DB0;
+    height: 100vh;  
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr) ;
+}
+
+.navbar {
+    grid-column: 1 / span 12;
+    background-color: #FAA300;
+}
+
+.footer {
+    grid-column: 1 / span 12 ;
+    grid-row: 12 / span 1;
+    background-color: #860A35;
+}
+
+.leftSideBar {
+    background-color: crimson;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 10;
+}
+
+.rightSideBar {
+    background-color: crimson;
+    grid-column: 12 / span 1;
+    grid-row: 2 / span 10;
+}
+
+.content {
+    background-color: violet;
+    grid-column: 2 / span 10;
+    grid-row: 2 / span 10;
+}
+
+/* ****** Styling the Navbar ****** */
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 55px;
+    color: #860A35;
+}
+
+.Logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* ****** Styling the footer ****** */
+
+.footer {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        color: black;
+        font-size: 14px;
+}
+
+/* ****** Styling the footer ****** */
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+}
+
+.Profile {
+    max-width: 600px;
+}
+
+.developer-photo {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+
+
+.contact-form {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(#FAA300, #711DB0);
+    color: #333;
+}
+
+input,
+textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 90%;
+    max-width: 500px;
+}
+
+.contact-left-title h2 {
+    color: #000;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.contact-left-title hr {
+    border: none;
+    width: 200px;
+    height: 5px;
+    background-color:  #711DB0 ;
+}
+
+.contact-inputs:focus: {
+    border: 2px solid black /* giving the selected text q focus */
+}
+
+.Back-to-homepage {
+    color: #000 ;
+}
+
